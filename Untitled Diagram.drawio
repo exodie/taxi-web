@@ -1,9 +1,47 @@
-<mxfile host="app.diagrams.net" modified="2023-11-02T21:08:16.803Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15" version="22.0.8" etag="DGINe1p4LjmM7Ac-jPMt" type="github">
+<mxfile host="app.diagrams.net" modified="2023-11-02T21:34:57.996Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15" etag="aqkFcSWtVpY0jEQNUoZr" version="22.0.8" type="github">
   <diagram name="Page-1" id="z2xWoFkqvR4UsxQCuY01">
-    <mxGraphModel>
+    <mxGraphModel dx="839" dy="693" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="wrT4gIVDLY99KAtbTuuL-1" value="Clusters" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;" vertex="1" parent="1">
+          <mxGeometry x="580" y="70" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="wrT4gIVDLY99KAtbTuuL-3" value="" style="swimlane;startSize=0;" vertex="1" parent="1">
+          <mxGeometry x="580" y="120" width="460" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="wrT4gIVDLY99KAtbTuuL-4" value="MongoDB" style="shape=datastore;whiteSpace=wrap;html=1;" vertex="1" parent="wrT4gIVDLY99KAtbTuuL-3">
+          <mxGeometry x="40" y="40" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="wrT4gIVDLY99KAtbTuuL-5" value="Redis" style="shape=datastore;whiteSpace=wrap;html=1;" vertex="1" parent="wrT4gIVDLY99KAtbTuuL-3">
+          <mxGeometry x="210" y="40" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="wrT4gIVDLY99KAtbTuuL-6" value="Memcached" style="shape=datastore;whiteSpace=wrap;html=1;" vertex="1" parent="wrT4gIVDLY99KAtbTuuL-3">
+          <mxGeometry x="40" y="190" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="wrT4gIVDLY99KAtbTuuL-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.118;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="wrT4gIVDLY99KAtbTuuL-1" target="wrT4gIVDLY99KAtbTuuL-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wrT4gIVDLY99KAtbTuuL-11" value="Main database for storage users &amp;amp; etc." style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="870" y="50" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wrT4gIVDLY99KAtbTuuL-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="wrT4gIVDLY99KAtbTuuL-4" target="wrT4gIVDLY99KAtbTuuL-11">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="660" y="110" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wrT4gIVDLY99KAtbTuuL-13" value="Session storage" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1050" y="160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wrT4gIVDLY99KAtbTuuL-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="wrT4gIVDLY99KAtbTuuL-5" target="wrT4gIVDLY99KAtbTuuL-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wrT4gIVDLY99KAtbTuuL-16" value="Cache storage" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="680" y="480" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wrT4gIVDLY99KAtbTuuL-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="wrT4gIVDLY99KAtbTuuL-6" target="wrT4gIVDLY99KAtbTuuL-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
