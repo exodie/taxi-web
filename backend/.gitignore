@@ -1,0 +1,8 @@
+.envrc
+node_modules/
+.DS_Store
+*.map
+
+dist/
+
+package-lock.json
