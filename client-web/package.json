@@ -1,6 +1,6 @@
 {
   "name": "client-web",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Frontend web-service for taxi application",
   "author": {
     "name": "exodie.",
@@ -14,16 +14,18 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "antd": "^5.10.3",
+    "next": "14.0.1",
     "react": "^18",
-    "react-dom": "^18",
-    "next": "14.0.1"
+    "react-dom": "^18"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "^8",
-    "eslint-config-next": "14.0.1"
+    "eslint-config-next": "14.0.1",
+    "sass": "^1.69.5",
+    "typescript": "^5"
   }
 }
