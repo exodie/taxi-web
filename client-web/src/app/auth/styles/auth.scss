@@ -1,0 +1,60 @@
+.container {
+  background: rgb(240, 240, 240);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 100vw;
+  height: 100vh;
+
+  overflow-x: hidden;
+
+  &__form {
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+
+    max-width: 300px;
+
+    legend {
+      font-size: 24px;
+      margin-left: 10px;
+    }
+
+    fieldset {
+      border-radius: 7px;
+    }
+
+    input {
+      padding: 5px;
+      margin: 10px 10px auto 10px;
+
+      width: 93%;
+
+      outline: none;
+
+      font-size: 16px;
+
+      border-radius: 5px;
+      border: none;
+    }
+
+    button {
+      font-size: 16px;
+
+      padding: 5px;
+      margin: 10px;
+
+      border-radius: 5px;
+      border: none;
+
+      background: white;
+    }
+    // For delete margins on register button
+    :last-child {
+      float: right;
+    }
+  }
+}
