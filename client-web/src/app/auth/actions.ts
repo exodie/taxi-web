@@ -19,3 +19,9 @@ export async function register(data: FormData) {
 
   redirect("/auth/verify");
 }
+
+export async function verify(id: string) {
+  if (!id) return console.error("verify::id is empty");
+
+  console.log(id);
+}

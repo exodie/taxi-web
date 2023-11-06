@@ -20,6 +20,11 @@ export default function Home() {
             <Link href={"/auth/create"}>Go to registration page</Link>
           </button>
         </li>
+        <li>
+          <button>
+            <Link href={"/auth/verify"}>Go to verify page</Link>
+          </button>
+        </li>
       </ol>
     </main>
   );

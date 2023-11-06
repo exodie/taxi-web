@@ -18,9 +18,21 @@
 
     max-width: 300px;
 
+    p {
+      max-width: 250px;
+
+      text-align: center;
+
+      margin: 10px auto 0 auto;
+    }
+
     legend {
       font-size: 24px;
       margin-left: 10px;
+    }
+    .verify {
+      text-align: center;
+      margin-left: 0;
     }
 
     fieldset {
