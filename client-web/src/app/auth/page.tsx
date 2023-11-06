@@ -27,6 +27,10 @@ export default function Authorization() {
           </button>
         </fieldset>
       </form>
+
+      <button className="container__float">
+        <Link href={"/"}>Home</Link>
+      </button>
     </section>
   );
 }

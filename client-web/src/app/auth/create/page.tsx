@@ -29,6 +29,10 @@ export default function AuthCreate() {
           </button>
         </fieldset>
       </form>
+
+      <button className="container__float">
+        <Link href={"/"}>Home</Link>
+      </button>
     </section>
   );
 }
