@@ -22,9 +22,9 @@ export default function AuthMailVerify({ params: { id } }: Props) {
         </fieldset>
       </form>
 
-      <button className="container__float">
-        <Link href={"/"}>Home</Link>
-      </button>
+      <Link href={"/"}>
+        <button className="container__float">Home</button>
+      </Link>
     </section>
   );
 }
