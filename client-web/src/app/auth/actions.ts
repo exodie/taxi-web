@@ -20,8 +20,11 @@ export async function register(data: FormData) {
   redirect("/auth/verify");
 }
 
-export async function verify(id: string) {
+export async function verify(data: FormData) {
+  const code = data.get("code");
+  const id = data.get("uuid");
+  
   if (!id) return console.error("verify::id is empty");
 
-  console.log(id);
+  console.log(code, id);
 }
