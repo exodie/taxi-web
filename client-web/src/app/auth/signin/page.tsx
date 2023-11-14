@@ -2,30 +2,28 @@ import Link from "next/link";
 
 import "../styles/auth.scss";
 
-import { register } from "../actions";
+import { auth } from "../actions";
 
-export default function AuthCreate() {
+export default function SignIn() {
   return (
     <section className="container">
-      <form action={register} className="container__form">
+      <form action={auth} className="container__form">
         <fieldset>
-          <legend>Registration</legend>
+          <legend>Authorization</legend>
           <input
             type="text"
             name="login"
             placeholder="Input your login"
             autoComplete="username"
           />
-          <input type="password" placeholder="Input your password" />
           <input
-            type="email"
-            name="email"
-            placeholder="Input your email"
-            autoComplete="email"
+            type="password"
+            name="password"
+            placeholder="Input your password"
           />
-          <button>Submit</button>
+          <button className="btn__active">Sign In</button>
           <button>
-            <Link href={"/auth"}>Sign In</Link>
+            <Link href={"/auth/signup"}>Sign Up</Link>
           </button>
         </fieldset>
       </form>
